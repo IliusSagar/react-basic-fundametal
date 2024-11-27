@@ -6,6 +6,7 @@ import Stateless from './components/Stateless';
 import Stateful from './components/Stateful';
 import Hello from './components/Hello';
 import Greet from './components/Greet';
+import Welcome from './components/Welcome';
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
       <button>Action</button>
     </Greet>
     <Greet name="Diana" heroName="Wonder woman"/>
+
+    <Welcome name="Bruce" heroName="Batman"/>
+    <Welcome name="Clark" heroName="Superman"/>
+    <Welcome name="Clark" heroName="Superman"/>
 
     
     </div>
