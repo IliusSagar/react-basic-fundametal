@@ -1,4 +1,4 @@
-import {create} from 'zustand'
+import {create} from 'zustand';
 
 import {devtools, persist} from 'zustand/middleware'
 
@@ -24,9 +24,10 @@ const courseStore = (set) => ({
 const useCourseStore = create(
     devtools(
         persist(courseStore, {
-            name: "courses"
+            name: "courses",
         })
     )
 )
+
 
 export default useCourseStore;

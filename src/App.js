@@ -1,6 +1,7 @@
 
 import './App.css';
 import CorseForm from './components/CorseForm';
+import CourseList from './components/CourseList';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       marginBottom: "2rem"
      }}>My Course list</h1>
      <CorseForm />
+     <CourseList />
     </div>
   );
 }
