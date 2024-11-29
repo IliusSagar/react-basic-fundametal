@@ -1,14 +1,13 @@
 
 import './App.css';
-import ClassClick from './components/ClassClick';
-import FuncionClick from './components/FuncionClick';
+
+import UserGreeting from './components/UserGreeting';
 
 
 function App() {
   return (
     <div className="main-container">
-     <FuncionClick />
-     <ClassClick />
+     <UserGreeting />
     </div>
   );
 }
