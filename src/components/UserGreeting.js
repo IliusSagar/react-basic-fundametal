@@ -7,18 +7,23 @@ class UserGreeting extends Component {
         super(props)
 
         this.state = {
-            isLoggedIn: false
+            isLoggedIn: true
         }
     }
 
   render() {
 
+
+    // ----------------  short circuit operator conditional rendering --------------
+    return this.state.isLoggedIn && <div>welcome Sagar</div>
+
+
      // ----------------  ternary conditional operator rendering --------------
-     return this.state.isLoggedIn ? (
-        <div>Welcome Sagar</div> 
-        ) : (
-        <div>Welcome Guest</div>
-        )
+    //  return this.state.isLoggedIn ? (
+    //     <div>Welcome Sagar</div> 
+    //     ) : (
+    //     <div>Welcome Guest</div>
+    //     )
      
 
 
