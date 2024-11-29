@@ -1,13 +1,13 @@
 
 import './App.css';
+import Lists from './components/Lists';
 
-import UserGreeting from './components/UserGreeting';
 
 
 function App() {
   return (
     <div className="main-container">
-     <UserGreeting />
+     <Lists />
     </div>
   );
 }
