@@ -13,17 +13,26 @@ class UserGreeting extends Component {
 
   render() {
 
-
-    let message
-    if(this.state.isLoggedIn){
-        message = <div>Welcome Sagar</div>
-    }else{
-        message = <div>Welcome Guest</div>
-    }
-
-    return <div>{message}</div>
+     // ----------------  ternary conditional operator rendering --------------
+     return this.state.isLoggedIn ? (
+        <div>Welcome Sagar</div> 
+        ) : (
+        <div>Welcome Guest</div>
+        )
+     
 
 
+    // ----------------  element variables conditional rendering --------------
+    // let message
+    // if(this.state.isLoggedIn){
+    //     message = <div>Welcome Sagar</div>
+    // }else{
+    //     message = <div>Welcome Guest</div>
+    // }
+    // return <div>{message}</div>
+
+
+    // ---------------- if else conditional rendering --------------
     // if(this.state.isLoggedIn){
     //     return(
     //         <div>
@@ -38,6 +47,7 @@ class UserGreeting extends Component {
     //     )
     // }
 
+    
     // return (
     //   <div>
     //     <div>Welcome Sagar</div>
